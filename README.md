@@ -2,7 +2,7 @@
 
 Sonatype Nexus3 with github authentication docker container.
 
-This docker environment inherits  [https://hub.docker.com/r/sonatype/nexus3](sonartype/nexus) and add the [https://github.com/larscheid-schmitzhermes/nexus3-github-oauth-plugin](nexus3-github-oauth-plugin) plugin.
+This docker environment inherits  [sonartype/nexus](https://hub.docker.com/r/sonatype/nexus3) and add the [nexus3-github-oauth-plugin](https://github.com/larscheid-schmitzhermes/nexus3-github-oauth-plugin) plugin.
 
 ## Configuration
 
