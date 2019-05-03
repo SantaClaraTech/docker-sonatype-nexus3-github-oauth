@@ -2,13 +2,13 @@
 
 Sonatype Nexus3 with github authentication docker container.
 
-This Dockerfile inherits  [https://hub.docker.com/r/sonatype/nexus3](sonartype/nexus) and add the [https://github.com/larscheid-schmitzhermes/nexus3-github-oauth-plugin](nexus3-github-oauth-plugin) plugin.
+This docker environment inherits  [https://hub.docker.com/r/sonatype/nexus3](sonartype/nexus) and add the [https://github.com/larscheid-schmitzhermes/nexus3-github-oauth-plugin](nexus3-github-oauth-plugin) plugin.
 
 ## Configuration
 
-When using docker-compose
+The following configurations may be used then deploying with **docker-compose**:
 
-docker-compose.yaml:
+**docker-compose.yaml**:
 
 ```yaml
 version: "3"
@@ -28,12 +28,14 @@ volumes:
     driver_opts:
       type: 'none'
       o: 'bind'
-device: '/srv/nexus3/data'
+      device: '/srv/nexus3/data'
 ```
 
-githuboauth.properties:
+**githuboauth.properties**:
 ```properties
 github.api.url=https://api.github.com
 github.principal.cache.ttl=PT1M
-github.org=organization-to-check
+# Filtering out my-organization-to-check
+github.org=my-organization-to-check
 ```
+
