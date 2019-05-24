@@ -2,6 +2,7 @@ FROM sonatype/nexus3:3.16.1
 
 # Version of the github oauth plugin
 ARG GITHUB_OAUTH_PLUGIN_VERSION=2.0.2
+ENV BUILD_TRIGGER=1
 
 ARG RELEASE_URL=https://github.com/Sczuka/nexus3-github-oauth-plugin/releases/download/develop/nexus3-github-oauth-plugin.zip
 # ARG RELEASE_URL=https://github.com/larscheid-schmitzhermes/nexus3-github-oauth-plugin/releases/download/$GITHUB_OAUTH_PLUGIN_VERSION/nexus3-github-oauth-plugin.zip
