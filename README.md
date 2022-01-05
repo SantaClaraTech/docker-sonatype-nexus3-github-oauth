@@ -15,7 +15,7 @@ version: "3"
 
 services:
   nexus:
-    image: sczuka/sonatype-nexus3-github-oauth:version-3.37.3
+    image: ghcr.io/sczuka/docker-sonatype-nexus3-github-oauth:v3.37.3
     volumes:
       - nexus-data:/nexus-data
       - "./githuboauth.properties:/opt/sonatype/nexus/etc/githuboauth.properties:ro"
