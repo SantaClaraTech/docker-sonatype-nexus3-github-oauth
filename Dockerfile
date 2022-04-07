@@ -1,4 +1,4 @@
-FROM sonatype/nexus3:3.37.3
+FROM sonatype/nexus3:3.38.1
 
 # Version of the github oauth plugin
 ARG GITHUB_OAUTH_PLUGIN_VERSION=2.0.2
